@@ -3,30 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biotech Ventures - Affordable GLP-1 Weight Management</title>
-    <meta name="description" content="Get GLP-1 medication starting at $499/month. Includes consultation, medication from licensed compounding pharmacies, and ongoing follow-ups via telemedicine.">
+    <title>Biotech Ventures - GLP-1 Weight Management</title>
+    <meta name="description" content="Affordable GLP-1 medication starting at $499/month via telemedicine. Includes consultation, compounded medication, and ongoing support.">
     
     <!-- Bootstrap 5 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
-    <!-- Calendly Widget Script -->
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Calendly -->
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
     
     <style>
-        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-        .hero { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://source.unsplash.com/1600x900/?health,medicine,wellness'); background-size: cover; color: white; padding: 150px 0; }
-        .price-highlight { font-size: 3rem; font-weight: bold; }
-        section { padding: 80px 0; }
-        .bg-light-gray { background-color: #f8f9fa; }
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; }
+        .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://www.circlemedical.com/_image?href=%2F_astro%2Fmain-image.BNUaa8Em.webp&w=1600&h=900&f=webp'); background-size: cover; background-position: center; color: white; padding: 180px 0; }
+        .price-highlight { font-size: 4rem; font-weight: bold; color: #00aaff; }
+        section { padding: 100px 0; }
+        .bg-light { background-color: #f8f9fa; }
+        .card-img-custom { height: 300px; object-fit: cover; }
+        .btn-primary { background-color: #00aaff; border: none; }
+        .btn-primary:hover { background-color: #0088cc; }
+        .icon-large { font-size: 3rem; color: #00aaff; margin-bottom: 20px; }
     </style>
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">Biotech Ventures</a>
+            <a class="navbar-brand fw-bold fs-3" href="#">Biotech Ventures</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -34,9 +41,8 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#how-it-works">How It Works</a></li>
                     <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#video">Video</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#video-conference">Video Conference</a></li>
-                    <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-3" href="#book">Book Now</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#video-conference">Video Consults</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-3 px-4" href="#book">Book Consultation</a></li>
                 </ul>
             </div>
         </div>
@@ -45,124 +51,146 @@
     <!-- Hero Section -->
     <section class="hero text-center">
         <div class="container">
-            <h1 class="display-4 fw-bold">Affordable GLP-1 Weight Management</h1>
-            <p class="lead">Starting at <span class="price-highlight">$499/month</span></p>
-            <p class="lead">Includes medication, initial consultation, follow-up consults for refills, and shipping — all via our secure telemedicine platform and licensed compounding pharmacies.</p>
-            <a href="#book" class="btn btn-light btn-lg mt-4">Get Started Today</a>
+            <h1 class="display-3 fw-bold">Your Path to Better Health Starts Here</h1>
+            <p class="lead fs-2">GLP-1 Weight Management Starting at <span class="price-highlight">$499/month</span></p>
+            <p class="lead">Personalized care from home. No insurance needed. Licensed providers & compounding pharmacies.</p>
+            <a href="#book" class="btn btn-light btn-lg mt-4 px-5 py-3">Get Started</a>
         </div>
     </section>
 
     <!-- What's Included -->
-    <section id="pricing" class="bg-light-gray">
+    <section id="pricing" class="bg-light">
         <div class="container">
-            <h2 class="text-center mb-5">Everything Included for $499/Month</h2>
-            <div class="row text-center">
+            <h2 class="text-center mb-5">All-Inclusive Pricing: $499/Month</h2>
+            <div class="row g-4">
                 <div class="col-md-4">
-                    <h4>Medication</h4>
-                    <p>Compounded GLP-1 (e.g., semaglutide) from U.S.-licensed 503A/503B compounding pharmacies using high-quality ingredients.</p>
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="https://agelessrx.com/wp-content/uploads/Semaglutide-Suite.png" class="card-img-top card-img-custom" alt="Compounded GLP-1 Medication">
+                        <div class="card-body text-center">
+                            <i class="fas fa-syringe icon-large"></i>
+                            <h4>Medication</h4>
+                            <p>Compounded GLP-1 (semaglutide/tirzepatide) from licensed 503A/503B pharmacies.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <h4>Telemedicine Consultation</h4>
-                    <p>Secure video or messaging visits with licensed healthcare providers.</p>
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="https://www.brookings.edu/wp-content/uploads/2020/05/telehealth_telemedicine_virtual-health-care.jpg" class="card-img-top card-img-custom" alt="Telemedicine Consultation">
+                        <div class="card-body text-center">
+                            <i class="fas fa-video icon-large"></i>
+                            <h4>Telemedicine Consults</h4>
+                            <p>Initial & follow-up video visits with licensed providers.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <h4>Ongoing Support</h4>
-                    <p>Follow-up consults for refills, personalized plan adjustments, and direct shipping to your door.</p>
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="https://martinswellness.com/media/wysiwyg/MW-compounding-pharmacy-3_1.jpg" class="card-img-top card-img-custom" alt="Compounding Pharmacy Lab">
+                        <div class="card-body text-center">
+                            <i class="fas fa-truck icon-large"></i>
+                            <h4>Ongoing Support & Shipping</h4>
+                            <p>Refills, adjustments, and discreet direct shipping.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <p class="text-center mt-4"><strong>No insurance required. Month-to-month — cancel anytime.</strong></p>
         </div>
     </section>
 
     <!-- How It Works -->
     <section id="how-it-works">
         <div class="container">
-            <h2 class="text-center mb-5">How It Works</h2>
-            <div class="row">
-                <div class="col-md-4 text-center">
+            <h2 class="text-center mb-5">Simple 3-Step Process</h2>
+            <div class="row g-5 text-center">
+                <div class="col-md-4">
+                    <i class="fas fa-file-medical icon-large"></i>
                     <h3>1. Complete Intake</h3>
-                    <p>Fill out a quick online medical questionnaire (and labs if needed).</p>
+                    <p>Quick online questionnaire & labs if needed.</p>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-md-4">
+                    <i class="fas fa-laptop-medical icon-large"></i>
                     <h3>2. Provider Consultation</h3>
-                    <p>Schedule a video consult via our telemedicine platform and licensed compounding pharmacy partnership.</p>
+                    <p>Secure video consult via telemedicine platform.</p>
                 </div>
-                <div class="col-md-4 text-center">
-                    <h3>3. Get Medication</h3>
-                    <p>If approved, compounded medication shipped discreetly every 30-90 days.</p>
+                <div class="col-md-4">
+                    <i class="fas fa-shipping-fast icon-large"></i>
+                    <h3>3. Receive Medication</h3>
+                    <p>Approved? Shipped discreetly every 30-90 days.</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Video Section -->
-    <section id="video" class="bg-light-gray">
-        <div class="container">
-            <h2 class="text-center mb-5">Learn More (Watch Video)</h2>
-            <div class="ratio ratio-16x9 mx-auto" style="max-width: 800px;">
-                <!-- Real placeholder: Educational GLP-1 video (replace with your own YouTube embed URL) -->
-                <iframe src="https://www.youtube.com/embed/1b9RGmO7IEE" title="GLP-1 Explainer Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <p class="text-center mt-3">This video explains the benefits and safe usage of GLP-1 medications.</p>
         </div>
     </section>
 
     <!-- Video Conference Section -->
-    <section id="video-conference">
+    <section id="video-conference" class="bg-light">
         <div class="container">
-            <h2 class="text-center mb-5">Video Conferences with Patients</h2>
-            <p class="text-center mb-4">For scheduled telemedicine consultations, join your secure video call using our integrated platform. Ensure you have a webcam and stable internet.</p>
-            <div class="text-center">
-                <!-- Placeholder: Replace with your Doxy.me or Zoom room link (e.g., https://doxy.me/yourroom or https://zoom.us/j/yourmeetingid) -->
-                <a href="https://doxy.me/your-telemedicine-room" class="btn btn-primary btn-lg" target="_blank">Join Your Video Conference</a>
+            <h2 class="text-center mb-5">Secure Video Conferences with Providers</h2>
+            <p class="text-center lead mb-5">Join your scheduled telemedicine consultation. HIPAA-compliant, easy to use — just click and connect.</p>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="https://as2.ftcdn.net/jpg/05/65/23/07/1000_F_565230748_i6Cna4q894br7LjYOexuxBAmFPepd0sM.jpg" class="img-fluid rounded shadow" alt="Doctor Video Consultation">
+                </div>
+                <div class="col-md-6 text-center">
+                    <p class="mb-4">Patients: Use the link from your confirmation email.<br>Providers: Log in to your room.</p>
+                    <!-- REPLACE WITH YOUR DOXY.ME OR ZOOM ROOM LINK -->
+                    <a href="https://doxy.me/your-room-name" class="btn btn-primary btn-lg px-5 py-3" target="_blank">Join Video Conference</a>
+                </div>
             </div>
-            <p class="text-center mt-3"><em>Patients: Use the link provided in your confirmation email. Providers: Sign up at doxy.me for HIPAA-compliant rooms.</em></p>
+        </div>
+    </section>
+
+    <!-- Testimonials Placeholder -->
+    <section>
+        <div class="container">
+            <h2 class="text-center mb-5">What Patients Say</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <p>"Life-changing program with great support!"</p>
+                            <p class="text-end"><strong>- Patient A</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <p>"Easy process and fast shipping."</p>
+                            <p class="text-end"><strong>- Patient B</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <p>"Professional providers who listen."</p>
+                            <p class="text-end"><strong>- Patient C</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Booking Calendar -->
-    <section id="book" class="bg-light-gray">
+    <section id="book" class="bg-light">
         <div class="container">
-            <h2 class="text-center mb-5">Book Your Free Initial Consultation</h2>
-            <p class="text-center mb-5">Schedule a time that works for you. No obligation — only pay if prescribed.</p>
-            
-            <!-- Calendly Inline Widget - REPLACE data-url WITH YOUR OWN (e.g., from calendly.com) -->
-            <div class="calendly-inline-widget" data-url="https://calendly.com/your-calendly-username/initial-glp1-consult?hide_gdpr_banner=1" style="min-width:320px;height:800px;"></div>
+            <h2 class="text-center mb-5">Book Your Consultation Now</h2>
+            <p class="text-center lead mb-5">Free initial scheduling. Pay only if prescribed.</p>
+            <!-- REPLACE WITH YOUR CALENDLY LINK (integrate Zoom for auto-video) -->
+            <div class="calendly-inline-widget mx-auto" data-url="https://calendly.com/your-username/glp1-consult?hide_gdpr_banner=1" style="min-width:320px;height:900px;"></div>
         </div>
     </section>
 
-    <!-- Contact Form (Optional Simple Addition) -->
-    <section id="contact">
-        <div class="container">
-            <h2 class="text-center mb-5">Contact Us</h2>
-            <form action="https://formspree.io/f/your-formspree-endpoint" method="POST" class="mx-auto" style="max-width: 600px;">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" name="name" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
-            <p class="text-center mt-3"><em>Replace the form action with your Formspree endpoint after signing up at formspree.io.</em></p>
-        </div>
-    </section>
-
-    <!-- Disclaimer/Footer -->
+    <!-- Footer Disclaimer -->
     <footer class="bg-dark text-white py-5">
         <div class="container text-center">
-            <p><strong>Important Disclaimer:</strong> This is not medical advice. Treatments are available only if deemed appropriate by a licensed provider after consultation. Medication is compounded in licensed U.S. pharmacies and requires a prescription. Results vary. Consult a healthcare professional for personalized advice. Biotech Ventures is not a medical provider; services via partnered telemedicine and pharmacies.</p>
-            <p>&copy; 2025 Biotech Ventures. All rights reserved. | Privacy Policy | Terms of Service</p>
+            <p><strong>Disclaimer:</strong> Not medical advice. Prescription required after provider approval. Compounded medications from licensed U.S. pharmacies. Results vary. Biotech Ventures partners with licensed providers and pharmacies.</p>
+            <p>&copy; 2025 Biotech Ventures. All rights reserved.</p>
         </div>
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
-</html>
+                                             </html>
